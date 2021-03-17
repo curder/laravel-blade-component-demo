@@ -1,5 +1,10 @@
 <x-layout>
-    <x-section>section 1</x-section>
-    <x-section>section 2</x-section>
-    <x-section>section 3</x-section>
+    <x-flash type="warning">
+        You are logged now!
+    </x-flash>
+
+    <x-flash type="error" class="mt-10">
+        Whops, Sorry about that!
+    </x-flash>
+
 </x-layout>
