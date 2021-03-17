@@ -1,8 +1,6 @@
 <x-layout>
     <x-section>
-        <form method="POST" action="/comments/{{ $comment->id }}">
-            @csrf
-            @method('PATCH')
+        <x-form method="PATCH" action="/comments/{{ $comment->id }}" class="bg-red-500">
 
             <div class="mb-6">
                 <label for="body" class="block mb-2 uppercase font-bold text-xs text-gray-700">
@@ -19,6 +17,6 @@
             <div class="mb-6">
                 <button class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500">Submit</button>
             </div>
-        </form>
+        </x-form>
     </x-section>
 </x-layout>
