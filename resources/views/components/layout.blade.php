@@ -6,6 +6,7 @@
 
     <title>Laravel blade component demo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.1/alpine.js"></script>
 </head>
 <body>
     {{ $slot }}
