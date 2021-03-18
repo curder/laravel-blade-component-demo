@@ -2,6 +2,23 @@
 
     @include('partials/header')
 
+    <x-section>
+
+        <x-tabs active="First">
+            <x-tab name="First">
+                First Tab Content.
+            </x-tab>
+
+            <x-tab name="Second">
+                Second Tab Content.
+            </x-tab>
+
+            <x-tab name="Third">
+                Third Tab Content.
+            </x-tab>
+        </x-tabs>
+
+    </x-section>
 
     <x-flash type="warning">
         You are logged now!
