@@ -5,7 +5,6 @@
         name: '{{ $name }}',
         show: false,
         showIfActive(activeTab) {
-            console.log(activeTab)
             this.show = this.name === activeTab
         }
     }"

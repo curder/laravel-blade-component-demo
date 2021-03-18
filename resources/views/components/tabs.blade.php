@@ -26,6 +26,7 @@
                     :class="tab === activeTab ? 'bg-blue-500 text-white' : ''"
                     :id="`tab-${index + 1}`"
                     role="tab"
+                    :disabled="tab === activeTab"
                     :aria-selected="(tab === activeTab).toString()"
                     :aria-controls="`tab-panel-${index + 1}`"
             ></button>
