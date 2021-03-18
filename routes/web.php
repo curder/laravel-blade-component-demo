@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::view('/', 'welcome')->name('home');
+
+Route::view('/contact', 'welcome')->name('contact');
+Route::view('/testimonials', 'welcome')->name('testimonials');
+Route::view('/about', 'welcome')->name('about');
 
 Route::get('/comments/{comment}/edit', function(Comment $comment) {
     return view('comments.edit', compact('comment'));
